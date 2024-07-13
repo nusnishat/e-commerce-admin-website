@@ -169,5 +169,114 @@
     "price": 200,
     "stock": "in",
     "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646890301/iltelsfxqjkziturlh9t.webp"
+  },
+  {
+    "_id": "20",
+    "title": "Ajwa Dates",
+    "category": "Fruits",
+    "quantity": "250 gm",
+    "price": 279,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646848115/arkdxrdxuwfktj7eljae.webp"
+  },
+  {
+    "_id": "21",
+    "title": "Lux Soap Bar Velvet Glow",
+    "category": "Beauty Care",
+    "quantity": "75 gm",
+    "price": 70,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646905704/rdlvdndh5bezuauxazui.webp"
+  },
+  {
+    "_id": "22",
+    "title": "Quail Meat ",
+    "category": "Meat",
+    "quantity": "4 pcs",
+    "price": 220,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646849199/koc9alka1vb4kt5wjkpm.webp"
+  },
+  {
+    "_id": "23",
+    "title": "Maltova Health and Nutrition Drink",
+    "category": "Health Care",
+    "quantity": "40 gm",
+    "price": 139,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646904937/rmwqb3ouqbfom684wytq.webp"
+  },
+  {
+    "_id": "24",
+    "title": "Green Capsicum",
+    "category": "Vegetables",
+    "quantity": "300 gm",
+    "price": 59,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646847218/q4hthn8qqibtrfqtidyv.webp"
+  },
+  {
+    "_id": "25",
+    "title": "Kolson Macaroni Shell",
+    "category": "Snacks",
+    "quantity": "400 gm",
+    "price": 60,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646889982/xfx3hz9yi9vkshwthbgg.webp"
+  },
+  {
+    "_id": "26",
+    "title": "Longan Fruit",
+    "category": "Fruits",
+    "quantity": "500 gm",
+    "price": 350,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646848201/bb5znfluiaskfiq2521o.webp"
+  },
+  {
+    "_id": "27",
+    "title": "Johnsons Baby Lotion",
+    "category": "Baby Care",
+    "quantity": "220 ml",
+    "price": 300,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646907205/eff9gftikkn9iliv2hov.webp"
+  },
+  {
+    "_id": "28",
+    "title": "Xpel Xbc Aloe Vera Cooling Gel",
+    "category": "Beauty Care",
+    "quantity": "250 gm",
+    "price": 250,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646906472/yelciztbiyq4hjryhuj2.webp"
+  },
+  {
+    "_id": "29",
+    "title": "Pasta Zara Conchiglie",
+    "category": "Snacks",
+    "quantity": "500 gm",
+    "price": 278,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646890211/px8hfrjsyfbw8zbppino.webp"
+  },
+  {
+    "_id": "30",
+    "title": "Sagor Kola ( Banana )",
+    "category": "Fruits",
+    "quantity": "4 pcs",
+    "price": 20,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646847573/nqzlduxkenjoedyvy7ce.webp"
+  },
+  {
+    "_id": "31",
+    "title": "Golden Harvest Frozen Dal Puri",
+    "category": "Snacks",
+    "quantity": "10 pcs packet",
+    "price": 56,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646889896/lchahpbdjbkclkxqoxrh.webp"
   }
 ]
+

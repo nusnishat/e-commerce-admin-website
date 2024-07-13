@@ -49,7 +49,7 @@ const Dashboard = () => {
             {/* --------heading---------- */}
             <div className="mx-4 mb-8 lg:mx-8 flex justify-between">
                 <div className='space-y-2'>
-                    <h1 className='text-3xl font-bold space-y-6 font-mono'>Dashboard</h1>
+                    <h1 className='text-3xl font-bold space-y-6 '>Dashboard</h1>
                     <p className='text-zinc-700'>Grocery Mart Admin Panel</p>
                 </div>
             </div>

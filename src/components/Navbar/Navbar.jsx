@@ -69,7 +69,7 @@ const Navbar = () => {
           <RiAdminFill className=" text-5xl me-2" />
           </div>
           <div className="text-md">
-            {/* <p>{user.email}</p> */}
+            <p>{user.email}</p>
             <p>Admin</p>
           </div>
         </div>
