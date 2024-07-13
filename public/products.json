@@ -1,0 +1,173 @@
+[
+  {
+    "_id": "1",
+    "title": "Malta",
+    "category": "Fruits",
+    "quantity": "1 kg",
+    "price": 130,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646847528/owizy97gvvaolg1x31ie.webp"
+  },
+  {
+    "_id": "2",
+    "title": "Red Tomato",
+    "category": "Vegetables",
+    "quantity": "1 kg",
+    "price": 35,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646843342/vwt6cwgqdrrunztqe7bs.webp"
+  },
+  {
+    "_id": "3",
+    "title": "Radhuni Turmeric Powder",
+    "category": "Spices",
+    "quantity": "200 gm",
+    "price": 89,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646851729/sfyb5mx8zx3nxmj5zkhj.webp"
+  },
+  {
+    "_id": "4",
+    "title": "Alu (Potato)",
+    "category": "Vegetables",
+    "quantity": "1 kg",
+    "price": 15,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646843299/b8wmnsl7pfx0qazowlcn.webp"
+  },
+  {
+    "_id": "5",
+    "title": "Deshi Gajor (Local Carrot)",
+    "category": "Vegetables",
+    "quantity": "500 gm",
+    "price": 15,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646846553/ygakocprpndyux5mwadf.webp"
+  },
+  {
+    "_id": "6",
+    "title": "Broiler Chicken",
+    "category": "Meat",
+    "quantity": "1 kg",
+    "price": 279,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646849465/ynttwoghrpev9q8nafty.webp"
+  },
+  {
+    "_id": "7",
+    "title": "QRS Led Lighting Bulb",
+    "category": "Lights and Electricals",
+    "quantity": "1 pcs",
+    "price": 1800,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646889061/sbg1j7vp35hoyvsnba6e.webp"
+  },
+  {
+    "_id": "8",
+    "title": "Fruits",
+    "category": "Fruits",
+    "quantity": "each",
+    "price": 350,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646848262/x1te4hqriwe39sjdee7m.webp"
+  },
+  {
+    "_id": "9",
+    "title": "Sagudana",
+    "category": "Health Care",
+    "quantity": "200 gm",
+    "price": 39,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646905079/tjwsrqd2npelm9zjwpvv.webp"
+  },
+  {
+    "_id": "10",
+    "title": "Motorshuti (Green Peas)",
+    "category": "Vegetables",
+    "quantity": "500 gm",
+    "price": 39,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646847093/f2akkx38cq7heashzibe.webp"
+  },
+  {
+    "_id": "11",
+    "title": "Meril Toothbrush",
+    "category": "Baby Care",
+    "quantity": "1 pcs",
+    "price": 170,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646907256/m99u6jix10heaiielysk.webp"
+  },
+  {
+    "_id": "12",
+    "title": "Rfl Apple Jug",
+    "category": "Kitchen Applications",
+    "quantity": "1 pcs",
+    "price": 270,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646889204/xifikygo3ggvygcb4xtk.webp"
+  },
+  {
+    "_id": "13",
+    "title": "Mola Fish",
+    "category": "Fish",
+    "quantity": "250 gm",
+    "price": 130,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646850468/d4v8ylertp9l4bfasls5.webp"
+  },
+  {
+    "_id": "14",
+    "title": "Roshun (Garlic)",
+    "category": "Vegetables",
+    "quantity": "500 gm",
+    "price": 59,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646846829/qww83nqary7nelb88txo.webp"
+  },
+  {
+    "_id": "15",
+    "title": "Lafz Lipstick",
+    "category": "Beauty Care",
+    "quantity": "45 gm",
+    "price": 440,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646905595/lmjageye6scs0cug4aa1.webp"
+  },
+  {
+    "_id": "16",
+    "title": "Moisturising Cream Jar",
+    "category": "Beauty Care",
+    "quantity": "50 ml",
+    "price": 180,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646905869/dkja667j1cgm4qmu2d3h.webp"
+  },
+  {
+    "_id": "17",
+    "title": "Narikel (Coconut)",
+    "category": "Fruits",
+    "quantity": "each",
+    "price": 79,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646847753/kkbhj6fx4uuhbbfdm5ir.webp"
+  },
+  {
+    "_id": "18",
+    "title": "Rupchada",
+    "category": "Fish",
+    "quantity": "500 gm",
+    "price": 345,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646850435/wobaoxxxembhi6xbaidz.webp"
+  },
+  {
+    "_id": "19",
+    "title": "Coca Cola",
+    "category": "Bevarage",
+    "quantity": "125 ltr",
+    "price": 200,
+    "stock": "in",
+    "imagePath": "http://res.cloudinary.com/da01skdwc/image/upload/v1646890301/iltelsfxqjkziturlh9t.webp"
+  }
+]

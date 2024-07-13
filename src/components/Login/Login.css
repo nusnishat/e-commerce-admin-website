@@ -1,0 +1,6 @@
+.signIn-banner{
+    background-image: url('/src/images/signup-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
