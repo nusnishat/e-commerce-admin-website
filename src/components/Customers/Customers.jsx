@@ -26,7 +26,7 @@ const Customers = () => {
     };
 
     return (
-        <div className='mb-20'>
+        <div className='py-12 bg-gray-100'>
             {/*--------------- Customers List Header------------ */}
             <div className="mx-4 mb-8 lg:mx-8 flex justify-between">
                 <div className='space-y-2'>
@@ -66,7 +66,7 @@ const Customers = () => {
                     </table>
                 </div>
                 {/*--------------- Pagination Buttons----------------- */}
-                <div className="mt-4 flex justify-center">
+                <div className="py-8 flex justify-center">
                     {[...Array(Math.ceil(customers.length / itemsPerPage))].map((_, index) => (
                         <button
                             key={index}

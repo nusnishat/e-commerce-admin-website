@@ -3,12 +3,13 @@ import './Register.css'
 import { FaGoogle, FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../providers/AuthProviders';
 
 const Register = () => {
     const {createUser, user} = useContext(AuthContext);
-    console.log(createUser);
+    const [error, setError] = useState('');
+    
     const navigate = useNavigate();
     const registerSuccess = () =>{
         toast.success('SucessFull!!')
@@ -21,6 +22,7 @@ const Register = () => {
         const password = form.password.value;
         const confirmPassword = form.confirmPassword.value;
         const email = form.email.value;
+        
 
        
         //////////////validation checking
@@ -42,22 +44,21 @@ const Register = () => {
             .then(result=>{
                 form.reset();
                 registerSuccess()
+                navigate('/login');
             })
             .catch(error =>{
-                console.log(error.message);
+                setError(error.message);
             })
-            navigate('/home');
+            
         }
        
     }
     
 
-
-
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 '>
              {/* -----------banner start------------ */}
-            <div className='signUp-banner relative text-white rounded-md shadow-lg text-center  flex items-center'>
+            <div className='signUp-banner  relative text-white rounded-md shadow-lg text-center  flex items-center'>
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className='relative max-w-md mx-auto space-y-4 px-4'>
                     <h1 className='text-4xl font-bold'>Welcome to <span className='text-black font-extrabold'>Grocery-Mart</span></h1>
@@ -128,6 +129,9 @@ const Register = () => {
                                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                 />
                             </div>
+                            {
+                                error && <p className='text-red-600'>{error}</p>
+                            }
                             <div>
                                 <button
                                 type="submit"

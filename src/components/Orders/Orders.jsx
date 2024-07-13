@@ -6,7 +6,7 @@ const Orders = () => {
     const { orders } = useContext(AuthContext); 
 
     return (
-        <div className='mb-20'>
+        <div className='py-12 bg-gray-100'>
             {/*--------------- Products List Header------------ */}
             <div className="mx-4 mb-8 lg:mx-8 flex justify-between">
                 <div className='space-y-2'>

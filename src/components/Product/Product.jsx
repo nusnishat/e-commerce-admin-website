@@ -5,7 +5,7 @@ import { CiStar } from "react-icons/ci";
 const Products = ({product}) => {
     const {title, imagePath, price, description} = product;
     return (
-        <div>
+        <div className="bg-white">
             <div className="card card-compact bg-base-100 md:h-80 py-6 px-4 rounded-md shadow-xl">
                 <figure>
                     <img className='w-1/2 mx-auto' src={imagePath} />

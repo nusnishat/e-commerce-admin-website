@@ -1,13 +1,14 @@
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaGoogle, FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../providers/AuthProviders';
 
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
     const navigate = useNavigate();
+    const [error, setError] = useState([]);
 
     const handleLogin = event =>{
         event.preventDefault();
@@ -19,10 +20,10 @@ const Login = () => {
                 const loggedUser = result.user;
                 form.reset();
                 console.log(loggedUser);
-                navigate('/home');
+                navigate('/home/dashboard');
             })
             .catch(error =>{
-                console.log(error.message);
+                setError(error.message);
             })
        
     }
@@ -79,6 +80,9 @@ const Login = () => {
                             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                             />
                         </div>
+                        {
+                                error && <p className='text-red-600'>{error}</p>
+                            }
                         <div>
                             <button
                             type="submit"

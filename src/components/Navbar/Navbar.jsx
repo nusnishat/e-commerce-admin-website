@@ -8,12 +8,13 @@ import { CgProfile } from "react-icons/cg";
 import { RiAdminFill } from "react-icons/ri";
 import { CgLogOut } from "react-icons/cg";
 import { AuthContext } from "../providers/AuthProviders";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false); 
   const {logOut, user} = useContext(AuthContext);
+  const navigate = useNavigate();
 
 
   // ------------------products menu-------------
@@ -32,6 +33,7 @@ const Navbar = () => {
   // -----logOut-------------
   const handleLogOut =()=>{
     logOut();
+    navigate('/login');
   }
 
   return (
@@ -59,13 +61,15 @@ const Navbar = () => {
         } md:translate-x-0`}
         onClick={closeNavbar} // Close navbar on click (optional)
       >
-        <div className="p-4 text-2xl text-orange mt-8 font-bold">Grocery Mart</div>
+        <div className="p-4 text-2xl text-orange mt-8 font-extrabold font-mono">
+          <img className="inline w-12 me-2" src="/src/images/icon.png" alt="" />Grocery Mart
+        </div>
         <div className="p-4  text-white mb-4 font-semibold flex">
           <div>
           <RiAdminFill className=" text-5xl me-2" />
           </div>
           <div className="text-md">
-            {/* <p>{user.email}</p> */}
+            <p>{user.email}</p>
             <p>Admin</p>
           </div>
         </div>
