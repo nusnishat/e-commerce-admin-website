@@ -1,4 +1,4 @@
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Register.css'
 import { FaGoogle, FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,7 +7,7 @@ import { useContext, useState } from 'react';
 import { AuthContext } from '../providers/AuthProviders';
 
 const Register = () => {
-    const {createUser, user} = useContext(AuthContext);
+    const {createUser} = useContext(AuthContext);
     const [error, setError] = useState('');
     
     const navigate = useNavigate();
