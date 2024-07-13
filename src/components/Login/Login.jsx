@@ -67,7 +67,7 @@ const Login = () => {
                             <input
                             type="email"
                             name="email"
-                            placeholder='EX- 01XXXXXXXX8'
+                            placeholder='Enter email'
                             className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                             />
                         </div>
