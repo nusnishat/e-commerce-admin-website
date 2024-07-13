@@ -1,8 +1,9 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../providers/AuthProviders';
 import AdminProduct from '../AdminProduct/AdminProduct';
 import AddProductModal from '../AddProductModal/AddProductModal';
 import { MdAdd } from "react-icons/md";
+
 
 const AdminProducts = () => {
     const { products } = useContext(AuthContext);
@@ -26,16 +27,10 @@ const AdminProducts = () => {
 
     return (
         <div className='mb-20'>
-            {/* -------------heading--------------- */}
-            <div className="bg-gradient-to-r from-black to-zinc-900 opacity-75 text-white py-6 px-4 mb-10">
-                <h1 className="text-4xl font-bold">Welcome to the Grocery Mart Admin Panel</h1>
-                <p className="text-lg mt-2">Manage your website efficiently and effortlessly</p>
-            </div>
-
             {/*--------------- Products List Header------------ */}
-            <div className="mb-8 lg:mx-8 flex justify-between">
-                <div>
-                    <h1 className='text-3xl font-bold'>Products List</h1>
+            <div className="mx-4 mb-8 lg:mx-8 flex justify-between">
+                <div className='space-y-2'>
+                    <h1 className='text-3xl font-bold space-y-6'>Total Products : {products.length}</h1>
                     <p className='text-zinc-700'>Grocery Mart Admin Panel</p>
                 </div>
                 {/* -------------------add product button start--------------- */}
@@ -51,7 +46,7 @@ const AdminProducts = () => {
                 </div>
             </div>
             {/* -----------table starts---------------------- */}
-            <div className='bg-white lg:mx-8'>
+            <div className='mx-4 bg-white lg:mx-8'>
                 <div className="overflow-x-auto mt-12">
                     <table className="min-w-full bg-white border-collapse rounded-lg overflow-hidden">
                         <thead>

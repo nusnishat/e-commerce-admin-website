@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import  { useContext, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi"; // Import icons from react-icons
 import { FaHome } from "react-icons/fa";
 import { GoSingleSelect } from "react-icons/go";
@@ -21,13 +21,18 @@ const Navbar = () => {
     setIsProductsOpen(!isProductsOpen);
   };
 
-  /////////-------------navbar toggle button-----------
+  //-------------navbar toggle button-----------
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
   const closeNavbar = () => {
     setIsOpen(false);
   };
+
+  // -----logOut-------------
+  const handleLogOut =()=>{
+    logOut();
+  }
 
   return (
     <div className="flex">
@@ -54,7 +59,7 @@ const Navbar = () => {
         } md:translate-x-0`}
         onClick={closeNavbar} // Close navbar on click (optional)
       >
-        <div className="p-4 text-2xl text-orange mt-8 font-bold">Fresh Mart</div>
+        <div className="p-4 text-2xl text-orange mt-8 font-bold">Grocery Mart</div>
         <div className="p-4  text-white mb-4 font-semibold flex">
           <div>
           <RiAdminFill className=" text-5xl me-2" />
@@ -64,12 +69,13 @@ const Navbar = () => {
             <p>Admin</p>
           </div>
         </div>
-        <ul className="mt-4 space-y-6 text-xl">
+        <ul className="mt-4 space-y-6 text-md">
           <li className="px-4 py-2 hover:bg-gray-700"><NavLink to='/home/dashboard'><FaHome className="inline me-2"/>Dashboard</NavLink></li>
           <li
-            className="px-4 py-2 hover:bg-gray-700" 
+            className="px-4 py-2 hover:bg-gray-700 cursor-pointer"
+            onClick={toggleProductsMenu} 
           > 
-            <AiFillProduct className="inline me-2" />Products <GoSingleSelect className="inline ms-2" onClick={toggleProductsMenu} />
+            <AiFillProduct className="inline me-2" />Products <GoSingleSelect className="inline ms-2" />
             {/* ---------------Products submenu---------------- */}
             {isProductsOpen && (
               <ul className="ml-4 space-y-2">
@@ -81,7 +87,7 @@ const Navbar = () => {
           </li>
           <li className="px-4 py-2 hover:bg-gray-700"><NavLink to="/home/orders"><MdLocalShipping className="inline me-2" />Orders</NavLink></li>
           <li className="px-4 py-2 hover:bg-gray-700"><NavLink to="/home/customers"><CgProfile className="inline me-2" />Customers</NavLink></li>
-          <li onClick={()=>logOut}  className="flex items- px-4 py-2 hover:bg-gray-700"><CgLogOut className="inline me-2" />LogOut</li>
+          <li onClick={handleLogOut}  className="flex items- px-4 py-2 hover:bg-gray-700"><CgLogOut className="inline me-2" />LogOut</li>
         </ul>
       </div>
     </div>

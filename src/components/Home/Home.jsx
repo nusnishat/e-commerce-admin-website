@@ -1,7 +1,8 @@
-import React from 'react';
+
 import Navbar from '../Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 import './home.css'
+import Banner from '../Banner/Banner';
 
 const Home = () => {
     const homeStyles = {
@@ -11,7 +12,8 @@ const Home = () => {
     return (
         <div style={homeStyles}>
              <Navbar></Navbar>
-            <div className='ms-8 md:ms-64'>
+            <div className='md:ms-64'>
+            <Banner></Banner>
             <Outlet></Outlet>
             </div>
         </div>

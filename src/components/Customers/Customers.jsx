@@ -4,6 +4,7 @@ import AddCustomerModal from '../AddCustomerModal/AddCustomerModal';
 import { MdAdd } from "react-icons/md";
 import Customer from '../Customer/Customer';
 
+
 const Customers = () => {
     const { customers } = useContext(AuthContext);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,15 +27,9 @@ const Customers = () => {
 
     return (
         <div className='mb-20'>
-            {/* -------------heading--------------- */}
-            <div className="bg-gradient-to-r from-black to-zinc-900 opacity-75 text-white py-6 px-4 mb-10">
-                <h1 className="text-4xl font-bold">Welcome to the Grocery Mart Admin Panel</h1>
-                <p className="text-lg mt-2">Manage your website efficiently and effortlessly</p>
-            </div>
-
             {/*--------------- Customers List Header------------ */}
-            <div className="mb-8 lg:mx-8 flex justify-between">
-                <div>
+            <div className="mx-4 mb-8 lg:mx-8 flex justify-between">
+                <div className='space-y-2'>
                     <h1 className='text-3xl font-bold'> Total Customers: {customers.length}</h1>
                     <p className='text-zinc-700'>Grocery Mart Admin Panel</p>
                 </div>
@@ -51,7 +46,7 @@ const Customers = () => {
                 </div>
             </div>
             {/* -----------table starts---------------------- */}
-            <div className='bg-white lg:mx-8'>
+            <div className='mx-4 bg-white lg:mx-8'>
                 <div className="overflow-x-auto mt-12">
                     <table className="min-w-full bg-white border-collapse rounded-lg overflow-hidden">
                         <thead>
