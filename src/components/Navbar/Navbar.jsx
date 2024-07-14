@@ -33,7 +33,10 @@ const Navbar = () => {
   // -----logOut-------------
   const handleLogOut =()=>{
     logOut();
+<<<<<<< HEAD
     navigate('/login');
+=======
+>>>>>>> 320e777 (updated)
   }
 
   return (
@@ -61,9 +64,13 @@ const Navbar = () => {
         } md:translate-x-0`}
         onClick={closeNavbar} // Close navbar on click (optional)
       >
+<<<<<<< HEAD
         <div className="p-4 text-2xl text-orange mt-8 font-extrabold font-mono">
           <img className="inline w-12 me-2" src="/src/images/icon.png" alt="" />Grocery Mart
         </div>
+=======
+        <div className="p-4 text-2xl text-orange mt-8 font-bold">Grocery Mart</div>
+>>>>>>> 320e777 (updated)
         <div className="p-4  text-white mb-4 font-semibold flex">
           <div>
           <RiAdminFill className=" text-5xl me-2" />

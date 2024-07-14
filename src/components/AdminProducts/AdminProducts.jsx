@@ -26,7 +26,11 @@ const AdminProducts = () => {
     };
 
     return (
+<<<<<<< HEAD
         <div className='py-12 bg-gray-100'>
+=======
+        <div className='mb-20'>
+>>>>>>> 320e777 (updated)
             {/*--------------- Products List Header------------ */}
             <div className="mx-4 mb-8 lg:mx-8 flex justify-between">
                 <div className='space-y-2'>

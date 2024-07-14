@@ -12,7 +12,11 @@ const Products = () => {
     };
 
     return (
+<<<<<<< HEAD
         <div className='py-12 bg-gray-100'>
+=======
+        <div className='mb-20'>
+>>>>>>> 320e777 (updated)
             {/* -------------heading--------------- */}
             <div className='mx-4 space-y-2'>
                 <h1 className='text-3xl font-bold '>Products List</h1>
