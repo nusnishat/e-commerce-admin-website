@@ -15,7 +15,7 @@ const Customers = () => {
         setIsModalOpen(!isModalOpen);
     };
 
-    //  calculation of customers to display on the current page
+    // Calculation of customers to display on the current page
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentCustomers = customers.slice(indexOfFirstItem, indexOfLastItem);
@@ -26,30 +26,25 @@ const Customers = () => {
     };
 
     return (
-<<<<<<< HEAD
         <div className='py-12 bg-gray-100'>
-=======
-        <div className='mb-20'>
->>>>>>> 320e777 (updated)
-            {/*--------------- Customers List Header------------ */}
+            {/* Customers List Header */}
             <div className="mx-4 mb-8 lg:mx-8 flex justify-between">
                 <div className='space-y-2'>
                     <h1 className='text-3xl font-bold'> Total Customers: {customers.length}</h1>
-                    <p className='text-zinc-700'>Grocery Mart Admin Panel</p>
+                    <p className='text-gray-700'>Grocery Mart Admin Panel</p>
                 </div>
-                {/* -------------------add Customers button --------------- */}
-                <div className="">
+                {/* Add Customer button */}
+                <div>
                     <button
                         className="bg-orange text-white px-4 py-2 rounded-md"
                         onClick={toggleModal}
                     >
-                        <MdAdd className='inline me-2 text-white font-bold text-2xl' />Add Customer
+                        <MdAdd className='inline-block me-2 text-white text-2xl' />Add Customer
                     </button>
-
                     {isModalOpen && <AddCustomerModal toggleModal={toggleModal} />}
                 </div>
             </div>
-            {/* -----------table starts---------------------- */}
+            {/* Table starts */}
             <div className='mx-4 bg-white lg:mx-8'>
                 <div className="overflow-x-auto mt-12">
                     <table className="min-w-full bg-white border-collapse rounded-lg overflow-hidden">
@@ -69,7 +64,7 @@ const Customers = () => {
                         </tbody>
                     </table>
                 </div>
-                {/*--------------- Pagination Buttons----------------- */}
+                {/* Pagination Buttons */}
                 <div className="py-8 flex justify-center">
                     {[...Array(Math.ceil(customers.length / itemsPerPage))].map((_, index) => (
                         <button
@@ -81,7 +76,7 @@ const Customers = () => {
                         </button>
                     ))}
                 </div>
-                {/* -----------table ends---------------------- */}
+                {/* Table ends */}
             </div>
         </div>
     );

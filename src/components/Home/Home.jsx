@@ -3,10 +3,8 @@ import Navbar from '../Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 import './home.css'
 import Banner from '../Banner/Banner';
-<<<<<<< HEAD
 import Footer from '../Footer/Footer';
-=======
->>>>>>> 320e777 (updated)
+
 
 const Home = () => {
     const homeStyles = {

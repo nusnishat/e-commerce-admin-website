@@ -1,25 +1,21 @@
-import  { useContext } from 'react';
+import { useContext } from 'react';
 import { AuthContext } from '../providers/AuthProviders';
-import Order from '../Order/Order'
+import Order from '../Order/Order';
 
 const Orders = () => {
-    const { orders } = useContext(AuthContext); 
+    const { orders } = useContext(AuthContext);
 
     return (
-<<<<<<< HEAD
         <div className='py-12 bg-gray-100'>
-=======
-        <div className='mb-20'>
->>>>>>> 320e777 (updated)
-            {/*--------------- Products List Header------------ */}
+            {/* Products List Header */}
             <div className="mx-4 mb-8 lg:mx-8 flex justify-between">
                 <div className='space-y-2'>
-                    <h1 className='text-3xl font-bold space-y-6'>Total Orders : {orders.length}</h1>
+                    <h1 className='text-3xl font-bold'>Total Orders: {orders.length}</h1>
                     <p className='text-zinc-700'>Grocery Mart Admin Panel</p>
                 </div>
             </div>
-            {/* -----------table starts---------------------- */}
-            <div className=' mx-4 bg-white lg:mx-8'>
+            {/* Table starts */}
+            <div className='mx-4 bg-white lg:mx-8'>
                 <div className="overflow-x-auto mt-12">
                     <table className="min-w-full bg-white border-collapse rounded-lg overflow-hidden">
                         <thead>
@@ -39,7 +35,7 @@ const Orders = () => {
                         </tbody>
                     </table>
                 </div>
-                {/* -----------table ends---------------------- */}
+                {/* Table ends */}
             </div>
         </div>
     );
