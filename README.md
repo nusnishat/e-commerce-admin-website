@@ -4,6 +4,7 @@ This project is an E-Commerce Admin Website built with modern web development te
 
 ## Features
 
+-**Dashboard:** A centralized view that provides an overview of key metrics, such as total sales, active orders, and customer statistics. The dashboard includes charts and graphs to visualize data trends, offering admins quick insights into the performance of the store.
 - **Product Management:** Admins can view a list of products, including their images, descriptions, and prices. The interface allows for easy management of the product catalog.
 - **Order Management:** The order management section provides a detailed view of customer orders, including order codes, customer details, total amounts, and payment methods.
 - **Customer Management:** Admins can view customer details and manage customer information as needed.
